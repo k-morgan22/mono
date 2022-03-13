@@ -32,6 +32,7 @@ const App: React.FC = () => {
         <div className="components">
           <CompOne />
           <CompTwo />
+          <CompOne />
         </div>
       </header>
     </div>
