@@ -1,0 +1,16 @@
+name: Source Code Analysis
+on:
+  pull_request:
+    types: [ opened, synchronize, reopened, ready_for_review ]
+    branches:
+      - main
+jobs:
+  snyk-pr-check:
+    name: Run Snyk PR Check
+    runs-on: ubuntu-latest
+    steps:
+        uses: actions/checkout@v2
+      - name: Snyk Test and Monitor
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
