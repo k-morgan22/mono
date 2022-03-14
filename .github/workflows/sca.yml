@@ -15,4 +15,4 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          args: --yarn-workspaces --exclude=packages/components/package.json
+          args: --yarn-workspaces --exclude=components
