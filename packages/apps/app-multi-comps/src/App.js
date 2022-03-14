@@ -34,6 +34,7 @@ class App extends Component {
             <CompOne />
             <CompTwo />
             <CompOne />
+            <CompTwo />
           </div>
         </header>
       </div>
