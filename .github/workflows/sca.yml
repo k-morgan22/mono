@@ -10,9 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Snyk Test and Monitor
-        uses: snyk/actions/node@master
+      - name: Install Node.js 14.x
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+          cache: npm
+      - name: Install Snyk-Delta
+        run: npm i -g snyk-delta
+      - uses: snyk/actions/setup@master
+      - name: Run Snyk Test
+        run: snyk test --yarn-workspaces --strict-out-of-sync=false
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        with:
-          args: --yarn-workspaces --strict-out-of-sync=false
