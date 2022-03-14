@@ -9,7 +9,7 @@ jobs:
     name: Run Snyk PR Check
     runs-on: ubuntu-latest
     steps:
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Snyk Test and Monitor
         uses: snyk/actions/node@master
         env:
