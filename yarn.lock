@@ -16088,6 +16088,11 @@ urix@^0.1.0:
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
   integrity sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
 
+url-js@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/url-js/-/url-js-2.0.0.tgz#2dd376fdc19ed573e4acc17e8900450500588971"
+  integrity sha512-PJErLiEGY1S+6fyIe27skr6iZ3W3vTpPBcdu+OrK4zI/xBE0p1MlV3rj9ln4cvfSctdvDkK1vaoJYmNiqtLCRw==
+
 url-loader@2.3.0, url-loader@^2.0.1:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/url-loader/-/url-loader-2.3.0.tgz#e0e2ef658f003efb8ca41b0f3ffbf76bab88658b"
