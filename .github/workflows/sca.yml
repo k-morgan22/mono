@@ -19,6 +19,6 @@ jobs:
         run: npm i -g snyk-delta
       - uses: snyk/actions/setup@master
       - name: Run Snyk Test
-        run: snyk test --yarn-workspaces --strict-out-of-sync=false --json --print-deps | snyk-delta
+        run: snyk test --json --print-deps | snyk-delta
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
