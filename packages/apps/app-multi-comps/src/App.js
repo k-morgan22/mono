@@ -33,6 +33,8 @@ class App extends Component {
           <div className="components">
             <CompOne />
             <CompTwo />
+            <CompOne />
+            <CompTwo />
           </div>
         </header>
       </div>
